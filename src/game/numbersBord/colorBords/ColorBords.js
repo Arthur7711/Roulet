@@ -1,7 +1,8 @@
 import React from "react";
 import s from "./ColorBords.module.css";
-// ???????????????????????
-export default function ColorBords({ checkColor }) {
+import { func } from "prop-types";
+
+function ColorBords({ checkColor }) {
   const redColor = [
     1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35,
   ];
@@ -21,3 +22,8 @@ export default function ColorBords({ checkColor }) {
     </div>
   );
 }
+
+ColorBords.protoType = {
+  checkColor: func.isRequired,
+};
+export default ColorBords;

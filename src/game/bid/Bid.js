@@ -3,8 +3,9 @@ import s from "./Bid.module.css";
 import chip1 from "../imgs/purpleChip.png";
 import chip2 from "../imgs/blackChip.png";
 import chip3 from "../imgs/blueChip.png";
+import { func, number } from "prop-types";
 
-export default function Bid({ makeABid, blind }) {
+function Bid({ makeABid, blind }) {
   return (
     <div className={s.bidPage}>
       <div className={s.chips}>
@@ -22,3 +23,10 @@ export default function Bid({ makeABid, blind }) {
     </div>
   );
 }
+
+Bid.protoType = {
+  makeABid: func.isRequired,
+  blind: number.isRequired,
+};
+
+export default Bid;
