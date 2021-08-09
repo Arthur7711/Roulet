@@ -1,0 +1,13 @@
+.bidPage {
+  background-color: grey;
+  margin: 5px 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.chips {
+  display: flex;
+  justify-content: center;
+}
+.chips img {
+  cursor: pointer;
+}

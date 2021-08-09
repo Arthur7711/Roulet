@@ -1,0 +1,23 @@
+.spinPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spin {
+  width: 200px;
+  margin-top: 5px;
+}
+.spin img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  background-color: #fff;
+  color: #5e4138;
+}

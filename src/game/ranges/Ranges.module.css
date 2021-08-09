@@ -1,0 +1,20 @@
+.ranges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+}
+.ranges div {
+  padding: 5px;
+  width: 93px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  cursor: pointer;
+}
+.ranges div span {
+  margin-bottom: 10px;
+  padding-top: 0;
+}

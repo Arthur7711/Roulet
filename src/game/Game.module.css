@@ -1,0 +1,9 @@
+.gameBord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #5e4138;
+  background-color: rgb(17, 90, 17);
+  color: #fff;
+  width: 500px;
+}

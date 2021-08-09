@@ -1,0 +1,11 @@
+.numbers {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 5px solid #5e4138;
+}
+.bordWidthColors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
