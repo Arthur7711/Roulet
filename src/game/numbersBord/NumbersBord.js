@@ -1,9 +1,9 @@
 import React from "react";
+import { func } from "prop-types";
 import EvenNum from "./evenNum/EvenNum";
 import OddNum from "./oddNum/OddNum";
-import s from "./NumbersBord.module.css";
 import ColorBords from "./colorBords/ColorBords";
-import { func } from "prop-types";
+import styles from "./NumbersBord.module.css";
 
 const odd = {
   backgroundColor: "black",
@@ -30,8 +30,8 @@ function NumbersBord({ checkColor, isClicked }) {
   ];
 
   return (
-    <div className={s.bordWidthColors}>
-      <div className={s.numbers}>
+    <div className={styles.bordWidthColors}>
+      <div className={styles.numbers}>
         {arr.map((num) =>
           num % 2 === 0 ? (
             <OddNum

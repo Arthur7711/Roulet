@@ -1,14 +1,14 @@
 import React from "react";
-import s from "./Bid.module.css";
+import { func, number } from "prop-types";
 import chip1 from "../imgs/purpleChip.png";
 import chip2 from "../imgs/blackChip.png";
 import chip3 from "../imgs/blueChip.png";
-import { func, number } from "prop-types";
+import styles from "./Bid.module.css";
 
 function Bid({ makeABid, blind }) {
   return (
-    <div className={s.bidPage}>
-      <div className={s.chips}>
+    <div className={styles.bidPage}>
+      <div className={styles.chips}>
         <div onClick={() => makeABid(1)}>
           <img alt="chip" src={chip1} width="20px" />
         </div>

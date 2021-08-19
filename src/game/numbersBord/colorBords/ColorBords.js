@@ -1,6 +1,6 @@
 import React from "react";
-import s from "./ColorBords.module.css";
 import { func } from "prop-types";
+import styles from "./ColorBords.module.css";
 
 function ColorBords({ checkColor }) {
   const redColor = [
@@ -12,11 +12,11 @@ function ColorBords({ checkColor }) {
   ];
 
   return (
-    <div className={s.colours}>
-      <div className={s.red} onClick={() => checkColor(redColor)}>
+    <div className={styles.colours}>
+      <div className={styles.red} onClick={() => checkColor(redColor)}>
         red
       </div>
-      <div className={s.black} onClick={() => checkColor(blackColor)}>
+      <div className={styles.black} onClick={() => checkColor(blackColor)}>
         black
       </div>
     </div>

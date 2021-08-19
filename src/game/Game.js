@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Bid from "./bid/Bid";
-import s from "./Game.module.css";
+import Spin from "./spin/Spin";
+import styles from "./Game.module.css";
 import NumbersBord from "./numbersBord/NumbersBord";
 import Ranges from "./ranges/Ranges";
-import Spin from "./spin/Spin";
 
 
 export default function Game() {
@@ -73,7 +73,7 @@ export default function Game() {
   };
 
   return (
-    <div className={s.gameBord}>
+    <div className={styles.gameBord}>
       <div>
         <div>Bank:{money}</div>
         <Spin getranfom={getranfom} />
